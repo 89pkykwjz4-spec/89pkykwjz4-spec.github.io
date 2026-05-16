@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +41,7 @@
         .nav-links a { color: var(--text-silver); text-decoration: none; margin-left: 30px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
         .nav-links a:hover { color: var(--electric-blue); }
 
-        /* HERO - THE "HEAVY" FEEL */
+        /* HERO */
         .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #0f172a 0%, #020617 100%); position: relative; padding: 0 10%; }
         .hero h1 { font-size: 5rem; font-weight: 800; letter-spacing: -2px; line-height: 1; margin-bottom: 25px; }
         .hero h1 span { color: var(--electric-blue); text-shadow: 0 0 30px rgba(14, 165, 233, 0.3); }
@@ -59,10 +59,43 @@
         .bento-card h3 { font-size: 1.8rem; margin-bottom: 15px; }
         .bento-card p { color: var(--text-silver); font-size: 1.05rem; }
 
-        /* THE MONEY MAKER - AI SECTION */
+        /* AI SECTION */
         .ai-banner { margin: 100px 8%; background: linear-gradient(to right, #0f172a, #1e3a8a); padding: 80px; border-radius: 30px; border: 1px solid var(--electric-blue); display: flex; justify-content: space-between; align-items: center; }
         .ai-text h2 { font-size: 3rem; margin-bottom: 20px; }
         .ai-badge { background: #0ea5e9; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 15px; display: inline-block; }
+
+        /* PRICING SECTION */
+        .zj-pricing-section { padding: 100px 8%; text-align: center; background: radial-gradient(circle at center, #0f172a 0%, #020617 100%); border-top: 1px solid var(--glass-white); }
+        .zj-pricing-title { font-size: 3.5rem; margin-bottom: 15px; font-weight: 800; }
+        .zj-pricing-title span { color: var(--electric-blue); text-shadow: 0 0 30px rgba(14, 165, 233, 0.3); }
+        .zj-pricing-subtitle { color: var(--text-silver); font-size: 1.2rem; margin-bottom: 60px; font-weight: 300; }
+        .zj-pricing-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1400px; margin: 0 auto; }
+        .zj-price-card { background: var(--glass-white); border: 1px solid rgba(255,255,255,0.05); border-radius: 24px; padding: 50px 30px 40px 30px; width: 280px; position: relative; transition: 0.4s; display: flex; flex-direction: column; text-align: left; }
+        .zj-price-card:hover { transform: translateY(-10px); border-color: var(--electric-blue); background: rgba(56, 189, 248, 0.02); box-shadow: 0 10px 40px rgba(14, 165, 233, 0.1); }
+        .zj-price-card.zj-highlighted { border-color: var(--electric-blue); box-shadow: 0 0 30px rgba(14, 165, 233, 0.2); background: rgba(14, 165, 233, 0.04); }
+        .zj-badge { position: absolute; top: 20px; right: 25px; background: rgba(255,255,255,0.05); color: var(--text-silver); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .zj-badge.zj-best { background: var(--electric-blue); color: #fff; }
+        .zj-price-card h3 { margin: 20px 0 10px 0; font-size: 1.6rem; font-weight: 800; }
+        .zj-price { font-size: 2.8rem; font-weight: 800; color: var(--electric-blue); margin: 15px 0 25px 0; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; }
+        .zj-currency { font-size: 1.1rem; color: var(--text-silver); margin-left: 5px; font-weight: 300; }
+        .zj-features { list-style: none; margin: 0 0 35px 0; flex-grow: 1; }
+        .zj-features li { margin-bottom: 15px; color: var(--text-silver); font-size: 1rem; position: relative; padding-left: 25px; }
+        .zj-features li::before { content: "✓"; position: absolute; left: 0; color: var(--electric-blue); font-weight: bold; }
+        
+        .zj-price-btn { padding: 14px 20px; background: linear-gradient(to right, #0ea5e9, #2563eb); color: #fff; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; text-align: center; text-decoration: none; display: block; }
+        .zj-price-btn:hover { transform: scale(1.02); box-shadow: 0 0 25px rgba(14, 165, 233, 0.4); }
+        .zj-custom-btn { background: transparent; border: 2px solid var(--electric-blue); color: var(--electric-blue); }
+        .zj-custom-btn:hover { background: var(--electric-blue); color: #fff; }
+
+        /* REVENUE ACCELERATOR (ADD-ONS) */
+        .revenue-addons { padding: 60px 8% 100px 8%; text-align: center; background: var(--midnight); }
+        .addons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto 0 auto; }
+        .addon-box { background: var(--obsidian); border: 1px solid rgba(255,255,255,0.03); padding: 30px; border-radius: 16px; text-align: left; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
+        .addon-box:hover { border-color: var(--electric-blue); transform: translateY(-3px); }
+        .addon-info h4 { font-size: 1.2rem; margin-bottom: 5px; }
+        .addon-info p { color: var(--text-silver); font-size: 0.9rem; }
+        .addon-price { font-size: 1.5rem; font-weight: 800; color: var(--electric-blue); display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+        .addon-link { font-size: 0.8rem; color: #fff; text-decoration: underline; font-weight: 600; }
 
         /* CONTACT FORM */
         .contact { padding: 100px 8%; display: flex; gap: 80px; }
@@ -74,7 +107,7 @@
 
         footer { text-align: center; padding: 60px; color: #475569; font-size: 0.9rem; border-top: 1px solid var(--glass-white); }
 
-        @media (max-width: 992px) { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 3.5rem; } .contact { flex-direction: column; } }
+        @media (max-width: 992px) { .grid, .addons-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 3.5rem; } .contact { flex-direction: column; } .zj-pricing-container { flex-direction: column; align-items: center; } .zj-price-card { width: 100%; max-width: 400px; } }
     </style>
 </head>
 <body>
@@ -86,6 +119,7 @@
         </div>
         <div class="nav-links">
             <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
             <a href="#contact">Consultation</a>
         </div>
     </nav>
@@ -94,7 +128,7 @@
         <p>GLOBAL STANDARDS. LOCAL EXCELLENCE.</p>
         <h1>Engineering the <span>Digital Future</span></h1>
         <p>Providing enterprise-level web development, AI automation, and expert code optimization for growing businesses.</p>
-        <a href="#contact"><button class="cta-button">Initialize Partnership</button></a>
+        <a href="#pricing"><button class="cta-button">View Packages</button></a>
     </section>
 
     <section class="services" id="services">
@@ -127,7 +161,112 @@
             <h2>AI & Workflow <span>Automation</span></h2>
             <p style="color: var(--text-silver); font-size: 1.2rem;">Recover thousands of business hours. We build AI agents that handle your tasks while you focus on scaling.</p>
         </div>
-        <a href="#contact"><button class="cta-button" style="background: #fff; color: #020617;">Get Quote</button></a>
+        <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank"><button class="cta-button" style="background: #fff; color: #020617;">Get Quote</button></a>
+    </section>
+
+    <section class="zj-pricing-section" id="pricing">
+        <h2 class="zj-pricing-title">Flexible <span>Pricing Plans</span></h2>
+        <p class="zj-pricing-subtitle">Choose the perfect plan for your business or request a custom solution</p>
+        
+        <div class="zj-pricing-container">
+            
+            <div class="zj-price-card">
+                <div class="zj-badge">Basic</div>
+                <h3>Starter Kit</h3>
+                <div class="zj-price">$70 <span class="zj-currency">USD</span></div>
+                <ul class="zj-features">
+                    <li>1 Premium Landing Page</li>
+                    <li>Modern & Mobile Responsive</li>
+                    <li>Social Media Integration</li>
+                    <li>2 Weeks Technical Support</li>
+                </ul>
+                <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="zj-price-btn">Get Started</a>
+            </div>
+
+            <div class="zj-price-card zj-highlighted">
+                <div class="zj-badge zj-best">Most Popular</div>
+                <h3>Advanced Engine</h3>
+                <div class="zj-price">$140 <span class="zj-currency">USD</span></div>
+                <ul class="zj-features">
+                    <li>Up to 5 Pages Full Website</li>
+                    <li>Ideal for Startups & Shops</li>
+                    <li>Integrated Contact Form</li>
+                    <li>Basic SEO Optimization</li>
+                    <li>1 Month Technical Support</li>
+                </ul>
+                <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="zj-price-btn">Get Started</a>
+            </div>
+
+            <div class="zj-price-card">
+                <div class="zj-badge">Premium</div>
+                <h3>Business Elite</h3>
+                <div class="zj-price">$350 <span class="zj-currency">USD</span></div>
+                <ul class="zj-features">
+                    <li>Advanced Dynamic Website</li>
+                    <li>Easy Content Management</li>
+                    <li>Premium Animations & UI</li>
+                    <li>High-Level Security Setup</li>
+                    <li>3 Months Dedicated Support</li>
+                </ul>
+                <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="zj-price-btn">Get Started</a>
+            </div>
+
+            <div class="zj-price-card">
+                <div class="zj-badge" style="color: #22c55e;">Passive</div>
+                <h3>Growth & Care</h3>
+                <div class="zj-price">$39 <span class="zj-currency">/mo</span></div>
+                <ul class="zj-features">
+                    <li>24/7 Website Monitoring</li>
+                    <li>Monthly Speed Optimization</li>
+                    <li>Minor Content & Text Updates</li>
+                    <li>Daily Database Backups</li>
+                </ul>
+                <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="zj-price-btn zj-custom-btn">Secure Plan</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="revenue-addons">
+        <div style="text-align: center;">
+            <p style="color: var(--electric-blue); letter-spacing: 3px; text-transform: uppercase;">Need a quick fix?</p>
+            <h2 style="font-size: 2.5rem; font-weight: 800;">On-Demand Technical Upgrades</h2>
+        </div>
+        
+        <div class="addons-grid">
+            <div class="addon-box">
+                <div class="addon-info">
+                    <h4>Speed & Performance Optimization</h4>
+                    <p>Boost your loading time to under 1.5 seconds to increase conversions.</p>
+                </div>
+                <div class="addon-price">
+                    <span>$45</span>
+                    <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="addon-link">Order</a>
+                </div>
+            </div>
+            
+            <div class="addon-box">
+                <div class="addon-info">
+                    <h4>Advanced Security Shield</h4>
+                    <p>DDoS protection, SSL setup, and malware protection injection.</p>
+                </div>
+                <div class="addon-price">
+                    <span>$55</span>
+                    <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="addon-link">Order</a>
+                </div>
+            </div>
+            
+            <div class="addon-box">
+                <div class="addon-info">
+                    <h4>AI Chatbot Integration</h4>
+                    <p>An automated intelligent assistant to capture and qualify leads 24/7.</p>
+                </div>
+                <div class="addon-price">
+                    <span>$125</span>
+                    <a href="https://www.instagram.com/zayjad.tech?igsh=MTM2bDR2dGphamM2aw==" target="_blank" class="addon-link">Order</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -156,194 +295,3 @@
 
 </body>
 </html>
-<section class="zj-pricing-section">
-    <h2 class="zj-pricing-title">Flexible Pricing Plans</h2>
-    <p class="zj-pricing-subtitle">Choose the perfect plan for your business or request a custom solution</p>
-    
-    <div class="zj-pricing-container">
-        
-        <div class="zj-price-card">
-            <div class="zj-badge">Basic</div>
-            <h3>Starter Kit</h3>
-            <div class="zj-price">50 <span class="zj-currency">JOD</span></div>
-            <ul class="zj-features">
-                <li>1 Premium Landing Page</li>
-                <li>Modern & Mobile Responsive</li>
-                <li>Social Media Integration</li>
-                <li>2 Weeks Technical Support</li>
-            </ul>
-            <button class="zj-price-btn">Get Started</button>
-        </div>
-
-        <div class="zj-price-card zj-highlighted">
-            <div class="zj-badge zj-best">Most Popular</div>
-            <h3>Advanced</h3>
-            <div class="zj-price">100 <span class="zj-currency">JOD</span></div>
-            <ul class="zj-features">
-                <li>Up to 5 Pages Full Website</li>
-                <li>Ideal for Startups & Shops</li>
-                <li>Integrated Contact Form</li>
-                <li>Basic SEO Optimization</li>
-                <li>1 Month Technical Support</li>
-            </ul>
-            <button class="zj-price-btn">Get Started</button>
-        </div>
-
-        <div class="zj-price-card">
-            <div class="zj-badge">Premium</div>
-            <h3>Business Elite</h3>
-            <div class="zj-price">250 <span class="zj-currency">JOD</span></div>
-            <ul class="zj-features">
-                <li>Advanced Dynamic Website</li>
-                <li>Easy Content Management</li>
-                <li>Premium Animations & UI</li>
-                <li>High-Level Security Setup</li>
-                <li>3 Months Dedicated Support</li>
-            </ul>
-            <button class="zj-price-btn">Get Started</button>
-        </div>
-
-        <div class="zj-price-card">
-            <div class="zj-badge">Custom</div>
-            <h3>Tailored Solution</h3>
-            <div class="zj-price">Custom</div>
-            <ul class="zj-features">
-                <li>Bespoke Design & Development</li>
-                <li>AI Automation Integrations</li>
-                <li>Complex Web Applications</li>
-                <li>Full Consultation & Strategy</li>
-            </ul>
-            <button class="zj-price-btn zj-custom-btn">Contact Us</button>
-        </div>
-
-    </div>
-</section>
-
-<style>
-    .zj-pricing-section {
-        padding: 80px 20px;
-        text-align: center;
-        background-color: #050b14; /* Matches your dark theme */
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        direction: ltr; /* Left to right layout */
-    }
-    .zj-pricing-title {
-        color: #ffffff;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-    .zj-pricing-subtitle {
-        color: #8a99ad;
-        font-size: 1.1rem;
-        margin-bottom: 50px;
-    }
-    .zj-pricing-container {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .zj-price-card {
-        background: #0d1527;
-        border: 1px solid #1e2d4a;
-        border-radius: 16px;
-        padding: 40px 25px 30px 25px;
-        width: 260px;
-        color: #fff;
-        position: relative;
-        transition: all 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    .zj-price-card:hover {
-        transform: translateY(-10px);
-        border-color: #00a2ff;
-        box-shadow: 0 10px 30px rgba(0, 162, 255, 0.15);
-    }
-    .zj-price-card.zj-highlighted {
-        border-color: #00a2ff;
-        box-shadow: 0 0 25px rgba(0, 162, 255, 0.2);
-        background: #111b33;
-    }
-    .zj-badge {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        background: #1e2d4a;
-        color: #00a2ff;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: bold;
-    }
-    .zj-badge.zj-best {
-        background: #00a2ff;
-        color: #fff;
-    }
-    .zj-price-card h3 {
-        margin: 15px 0 10px 0;
-        font-size: 1.4rem;
-        color: #fff;
-    }
-    .zj-price {
-        font-size: 2.3rem;
-        font-weight: 700;
-        color: #00a2ff;
-        margin: 15px 0 25px 0;
-        border-bottom: 1px solid #1e2d4a;
-        padding-bottom: 15px;
-    }
-    .zj-currency {
-        font-size: 1rem;
-        color: #8a99ad;
-        margin-left: 5px;
-    }
-    .zj-features {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 30px 0;
-        flex-grow: 1;
-    }
-    .zj-features li {
-        margin-bottom: 12px;
-        color: #b4c2d3;
-        font-size: 0.95rem;
-        position: relative;
-        padding-left: 20px;
-    }
-    .zj-features li::before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #00a2ff;
-        font-weight: bold;
-    }
-    .zj-price-btn {
-        background-color: #00a2ff;
-        color: #fff;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 1rem;
-        width: 100%;
-        transition: background 0.2s;
-    }
-    .zj-price-btn:hover {
-        background-color: #0081cc;
-    }
-    .zj-custom-btn {
-        background-color: transparent;
-        border: 2px solid #00a2ff;
-        color: #00a2ff;
-    }
-    .zj-custom-btn:hover {
-        background-color: #00a2ff;
-        color: #fff;
-    }
-</style>
