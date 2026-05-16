@@ -156,3 +156,194 @@
 
 </body>
 </html>
+<section class="zj-pricing-section">
+    <h2 class="zj-pricing-title">Flexible Pricing Plans</h2>
+    <p class="zj-pricing-subtitle">Choose the perfect plan for your business or request a custom solution</p>
+    
+    <div class="zj-pricing-container">
+        
+        <div class="zj-price-card">
+            <div class="zj-badge">Basic</div>
+            <h3>Starter Kit</h3>
+            <div class="zj-price">50 <span class="zj-currency">JOD</span></div>
+            <ul class="zj-features">
+                <li>1 Premium Landing Page</li>
+                <li>Modern & Mobile Responsive</li>
+                <li>Social Media Integration</li>
+                <li>2 Weeks Technical Support</li>
+            </ul>
+            <button class="zj-price-btn">Get Started</button>
+        </div>
+
+        <div class="zj-price-card zj-highlighted">
+            <div class="zj-badge zj-best">Most Popular</div>
+            <h3>Advanced</h3>
+            <div class="zj-price">100 <span class="zj-currency">JOD</span></div>
+            <ul class="zj-features">
+                <li>Up to 5 Pages Full Website</li>
+                <li>Ideal for Startups & Shops</li>
+                <li>Integrated Contact Form</li>
+                <li>Basic SEO Optimization</li>
+                <li>1 Month Technical Support</li>
+            </ul>
+            <button class="zj-price-btn">Get Started</button>
+        </div>
+
+        <div class="zj-price-card">
+            <div class="zj-badge">Premium</div>
+            <h3>Business Elite</h3>
+            <div class="zj-price">250 <span class="zj-currency">JOD</span></div>
+            <ul class="zj-features">
+                <li>Advanced Dynamic Website</li>
+                <li>Easy Content Management</li>
+                <li>Premium Animations & UI</li>
+                <li>High-Level Security Setup</li>
+                <li>3 Months Dedicated Support</li>
+            </ul>
+            <button class="zj-price-btn">Get Started</button>
+        </div>
+
+        <div class="zj-price-card">
+            <div class="zj-badge">Custom</div>
+            <h3>Tailored Solution</h3>
+            <div class="zj-price">Custom</div>
+            <ul class="zj-features">
+                <li>Bespoke Design & Development</li>
+                <li>AI Automation Integrations</li>
+                <li>Complex Web Applications</li>
+                <li>Full Consultation & Strategy</li>
+            </ul>
+            <button class="zj-price-btn zj-custom-btn">Contact Us</button>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .zj-pricing-section {
+        padding: 80px 20px;
+        text-align: center;
+        background-color: #050b14; /* Matches your dark theme */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        direction: ltr; /* Left to right layout */
+    }
+    .zj-pricing-title {
+        color: #ffffff;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .zj-pricing-subtitle {
+        color: #8a99ad;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+    }
+    .zj-pricing-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .zj-price-card {
+        background: #0d1527;
+        border: 1px solid #1e2d4a;
+        border-radius: 16px;
+        padding: 40px 25px 30px 25px;
+        width: 260px;
+        color: #fff;
+        position: relative;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .zj-price-card:hover {
+        transform: translateY(-10px);
+        border-color: #00a2ff;
+        box-shadow: 0 10px 30px rgba(0, 162, 255, 0.15);
+    }
+    .zj-price-card.zj-highlighted {
+        border-color: #00a2ff;
+        box-shadow: 0 0 25px rgba(0, 162, 255, 0.2);
+        background: #111b33;
+    }
+    .zj-badge {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: #1e2d4a;
+        color: #00a2ff;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    .zj-badge.zj-best {
+        background: #00a2ff;
+        color: #fff;
+    }
+    .zj-price-card h3 {
+        margin: 15px 0 10px 0;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    .zj-price {
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: #00a2ff;
+        margin: 15px 0 25px 0;
+        border-bottom: 1px solid #1e2d4a;
+        padding-bottom: 15px;
+    }
+    .zj-currency {
+        font-size: 1rem;
+        color: #8a99ad;
+        margin-left: 5px;
+    }
+    .zj-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px 0;
+        flex-grow: 1;
+    }
+    .zj-features li {
+        margin-bottom: 12px;
+        color: #b4c2d3;
+        font-size: 0.95rem;
+        position: relative;
+        padding-left: 20px;
+    }
+    .zj-features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #00a2ff;
+        font-weight: bold;
+    }
+    .zj-price-btn {
+        background-color: #00a2ff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 100%;
+        transition: background 0.2s;
+    }
+    .zj-price-btn:hover {
+        background-color: #0081cc;
+    }
+    .zj-custom-btn {
+        background-color: transparent;
+        border: 2px solid #00a2ff;
+        color: #00a2ff;
+    }
+    .zj-custom-btn:hover {
+        background-color: #00a2ff;
+        color: #fff;
+    }
+</style>
