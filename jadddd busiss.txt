@@ -1,0 +1,20 @@
+<section id="contact" class="contact">
+        <h2>Let's Build Something Great</h2>
+        <p>Have a project in mind? Drop your details below, and I'll get back to you via email within 24 hours.</p>
+        
+        <form action="https://formspree.io/f/xzdwprvd" method="POST" style="max-width: 500px; margin: 0 auto; text-align: left; display: flex; flex-direction: column; gap: 15px;">
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem;">Your Name</label>
+                <input type="text" name="name" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background-color: #0b0f19; color: white; font-size: 1rem;">
+            </div>
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem;">Your Email</label>
+                <input type="email" name="_replyto" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background-color: #0b0f19; color: white; font-size: 1rem;">
+            </div>
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem;">Project Details / Requirements</label>
+                <textarea name="message" rows="5" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background-color: #0b0f19; color: white; font-size: 1rem; resize: vertical;"></textarea>
+            </div>
+            <button type="submit" class="cta-btn" style="border: none; cursor: pointer; padding: 15px; font-size: 1.1rem; margin-top: 10px;">Send Message</button>
+        </form>
+    </section>
